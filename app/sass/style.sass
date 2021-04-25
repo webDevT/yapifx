@@ -1,0 +1,2375 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: $main-font 
+	font-weight: 400
+	background: #dfdfdf
+	color: $text-color
+	font-size: 18px
+.container-fluid 
+	max-width: 1000px
+a,
+a:hover 
+	text-decoration: none
+ul 
+	padding-left: 0 
+	list-style: none
+	margin-bottom: 0
+h1 
+	font-size: 36px
+	color: #dfdfdf
+	font-weight: 400
+	line-height: 1.2
+	font-family: $primary-font
+	span 
+		font-weight: 700
+		color: $yellow
+		display: block
+		line-height: 1.5
+		font-family: $main-font
+h2 
+	text-align: center
+	font-family: $primary-font
+	font-weight: 400
+	line-height: 1.2
+	margin-bottom: 0
+	span 
+		color: $yellow
+		font-weight: 700
+.sub-title 
+	text-align: center
+	font-size: 21px 
+	font-family: $primary-font
+	color: #404040
+.page-title
+	color: $yellow
+	font-size: 32px
+	font-weight: 600
+	text-align: center
+//end global style
+
+//start header style
+.header__top 
+	background: $title-color
+	border-bottom: 2px solid #121212
+	height: 61px
+	.container-fluid 
+		display: flex
+		justify-content: space-between
+.header__top-right
+	width: 50%
+.header__top-left 
+	color: #dfdfdf
+	width: 50%
+.header__top-left
+	display: flex
+	align-items: center
+	border-right: 2px solid #121212
+.header__contact-item
+	padding-left: 10px
+	padding-right: 10px
+	display: flex 
+	align-items: center
+
+	img 
+		width: 21px
+.header__contact-item-text
+	font-size: 16px 
+	color: #dfdfdf
+	margin-left: 5px
+.header__contact-item:hover 
+	.header__contact-item-text
+		color: $yellow 
+.header__contact-wrapper
+	display: flex 
+	align-items: center
+
+.header__top-right
+	display: flex
+	align-items: center
+	border-right: 2px solid #121212
+
+.header__item
+	min-width: 115px
+	display: flex 
+	justify-content: center
+	align-items: center
+	height: 100% 
+	border-right: 2px solid #121212
+	color: #a9a8a8
+	font-size: 16px
+.header__item:hover
+	background: #2a2a2a
+	color: #dfdfdf
+.header__buttons-wrapper
+	padding-right: 10px 
+	padding-left: 10px
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	width: 100%
+.header__button--transparent
+	color: $yellow
+	
+	
+.header__button--transparent:hover 
+	background: $yellow
+	color: #181818
+.header__button	
+	display: flex
+	justify-content: center 
+	align-items: center
+	border-radius: 4px
+	font-size: 16px
+	width: 110px
+	height: 37px
+	border: 2px solid $yellow
+.header__button--yellow 
+	background: $yellow
+	color: #181818
+.header__button--yellow:hover 
+	background: #bd7c00
+	border: 2px solid #bd7c00
+	color: #181818
+
+.logo 
+	img 
+		width: 138px
+.header__items
+	display: flex
+	height: 100%
+//end header style
+
+//start lenguage select
+.select2-search--dropdown
+	display: none
+.select2-container
+	width: 58px !important
+	//height: 100% 
+	background: #404040 
+	outline: none
+.select2-selection__rendered p 
+	display: none
+.select2-selection__rendered 
+	height: 60px !important
+.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus
+	.select2-selection__rendered 
+		background: #181818 !important
+.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open
+	.select2-selection__rendered 
+		background: #404040 !important
+.select2-container--default .select2-selection--single
+	background: #181818 !important 
+	border: none !important
+.select2-container--default .select2-results>.select2-results__options
+	width: 170px
+.select2-results__option
+	img 
+		width: 25px
+		margin-right: 10px
+.select2-selection__rendered
+	img 
+		width: 25px
+
+.select2-container .select2-selection--single .select2-selection__rendered div
+	display: flex
+	align-items: center
+	height: 100%
+.select2-container .select2-selection--single .select2-selection__rendered 
+	outline: none !important
+.select2-dropdown.select2-dropdown--below
+	top: 32px
+.select2-results__option div 
+	display: flex 
+	align-items: center
+	p 
+		margin-bottom: 0
+.select2-results__option,
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	background: #404040 !important
+.select2-container--default .select2-selection--single
+	outline: none !important
+.select2-dropdown.select2-dropdown--below
+	border: none
+.select2-container--default .select2-results>.select2-results__options
+	border-top-right-radius: 5px
+	border-bottom-right-radius: 5px
+	border-bottom-left-radius: 5px
+.select2-results__option.select2-results__option--highlighted
+
+
+.select2-results__option p
+	font-size: 18px 
+	color: #dfdfdf
+	font-weight: 300 !important
+
+.select2-results__option.select2-results__option--highlighted p
+	font-weight: 500 !important
+.select2-selection__arrow
+	background: url('../img/down-arrow.svg')
+	background-size: 10px
+	background-repeat: no-repeat
+	background-position: center 
+	height: 60px !important
+	b 
+		display: none
+.leng-select__wrapper
+	border-left: 2px solid #121212
+	border-right: 2px solid #121212
+	height: 60px
+	width: 61px
+.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open
+	.select2-selection__arrow
+		background: url('../img/up-arrow.svg')
+		background-size: 10px
+		background-repeat: no-repeat
+		background-position: center 
+		height: 60px !important
+.select2-container--default .select2-selection--single
+	border-radius: 0 !important
+//end lenguage select
+
+//start menu style 
+.header__menu
+	position: relative 
+	z-index: 99
+
+	.container-fluid 
+		display: flex 
+		justify-content: space-between
+.menu 
+	ul 
+		display: flex
+	a 
+		
+.menu-link 
+	color: #dfdfdf 
+	font-weight: 300
+	font-size: 18px
+	padding-left: 15px
+	padding-right: 15px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	height: 45px
+	border-top-left-radius: 4px 
+	border-top-right-radius: 4px
+	cursor: pointer
+
+.header__menu 
+	background: #181818
+	padding-top: 6px 
+.logo 
+	display: flex
+	align-items: center
+.menu-item
+	position: relative
+.menu-dropdown
+	position: absolute 
+	top: 100% 
+	left: 0
+	background: #404040
+	border-top: 2px solid #222222
+	min-width: 240px
+	padding: 10px 20px 
+	border-top-right-radius: 4px 
+	border-bottom-left-radius: 4px
+	border-bottom-right-radius: 4px 
+	display: none 
+
+
+.menu-dropdown
+	a 
+		display: flex
+		align-items: center
+		padding-top: 10px 
+		padding-bottom: 10px
+		color: #dfdfdf 
+		font-size: 18px 
+		font-weight: 300
+	a:before 
+		content: ''
+		background: $yellow 
+		width: 8px 
+		height: 8px 
+		border-radius: 50%
+		margin-right: 13px
+	a:hover 
+		color: $yellow
+.menu-item:hover
+	.menu-dropdown
+		display: block
+	.menu-link
+		background: #404040
+		color: $yellow
+.menu-item:hover
+	a.menu-link
+		position: relative
+		background: transparent
+		color: #dfdfdf
+	a.menu-link:before 
+		content: ''
+		width: 70%
+		height: 3px 
+		background: $yellow
+		left: 50%
+		bottom: 0
+		transform: translateX(-50%)
+		position: absolute
+		
+//end menu style
+
+//start main screen style
+.main-screen
+	min-height: 48vw
+	background: url('../img/main-bg.png')
+	background-size: cover 
+	background-position: center
+	padding-top: 5.486vw
+	position: relative 
+	top: -1px
+	.container-fluid-content
+		display: flex 
+		justify-content: space-between
+		align-items: center
+.main-screen__text
+	font-size: 21px
+	color: #dfdfdf
+	max-width: 315px
+.main-screen__btn
+	width: 280px 
+	height: 50px 
+	background: $yellow 
+	color: #181818
+	font-weight: 600 
+	font-family: $primary-font 
+	font-size: 21px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	border-radius: 4px
+	margin-top: 18px
+	transition: all 0.3s
+	span 
+		transform: translateY(8%)
+.main-screen__btn:hover 
+	background: $yellow-hover
+	color: #181818
+
+.main-screen__form 
+	width: 100%
+	background-color: rgba(47, 47, 47, .8)
+	border-radius: 10px
+	padding: 22px 20px
+	min-height: 164px
+	margin-top: 10vw
+.main-screen__form-title
+	text-align: center
+.main-screen__form-title
+	color: #dfdfdf
+	font-size: 21px
+	span 
+		font-weight: 700
+.main-screen__form-bottom
+	text-align: center
+	font-size: 14px
+	color: #dfdfdf
+	font-weight: 300
+.main-screen__form-bottom a
+	color: #dfdfdf
+	text-decoration: underline 
+.form 
+	width: 100% 
+	justify-content: space-between 
+	display: flex
+	margin-top: 15px 
+	margin-bottom: 15px
+	.input 
+		height: 50px
+		width: 25.988%
+		border-radius: 4px
+		background: #404040
+		border: none
+		border-left: 4px solid #727272
+		border-right: 4px solid #727272
+		outline: none
+		padding-left: 37px
+		color: #dfdfdf
+	.input::placeholder
+		color: #dfdfdf 
+	.input:focus::placeholder 
+		color: transparent
+	.input:focus
+		background-color: #5e5e5e
+		border-left: 4px solid $yellow
+		border-right: 4px solid $yellow
+
+	.submit-button
+		width: 18.711%
+		background: $yellow
+		border: none
+		font-weight: 700 
+		font-family: $primary-font
+		cursor: pointer
+		transition: all 0.5s
+		border-radius: 4px
+		outline: none
+		height: 50px
+		font-size: 15px
+		span 
+			position: relative
+			top: 4%
+	.submit-button:hover 
+		background: $yellow-hover
+	.input-person
+		background-image: url('../img/profile.svg')
+		background-size: 17px
+		background-repeat: no-repeat
+		background-position: left 10px center
+	.input-phone
+		background-image: url('../img/phone2.svg')
+		background-size: 17px
+		background-repeat: no-repeat
+		background-position: left 10px center
+	.input-mail
+		background-image: url('../img/mail.svg')
+		background-size: 17px
+		background-repeat: no-repeat
+		background-position: left 10px center
+	.input-sifre
+		background-image: url('../img/safe.svg')
+		background-size: 17px
+		background-repeat: no-repeat
+		background-position: left 10px center
+
+//end main screen style
+
+//start tools style 
+.tools__items
+	margin-bottom: 50px
+	width: 100%
+	display: flex 
+	justify-content: space-between
+	margin-top: 20px
+.tools__item
+	background: linear-gradient(160deg, #2a2a2a, #2a2a2a 65%, #434343 65%, #434343)
+	border-radius: 4px
+	padding-top: 20px
+	padding-bottom: 15px
+.tools__item-img-wrapper
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 75px
+	img 
+		max-width: 65px
+		max-height: 55px
+.tools__item-title
+	text-align: center 
+	font-size: 18px 
+	color: #f7f7f7
+	height: 36px 
+	display: flex 
+	align-items: center 
+	justify-content: center
+	line-height: 1.2
+.tools__item
+	width: 18.500%
+.tools
+	background: url('../img/back.png')
+	background-size: cover
+	background-repeat: no-repeat 
+	background-position: top center
+	padding-top: 240px
+	margin-top: -200px
+	//transform: translateY(-200px)
+	padding-bottom: 38px
+.tools__item-title--two-row
+	transform: translateY(-10%)
+.tools__item:nth-child(3)
+	.tools__item-img-wrapper
+		align-items: flex-start
+		img 
+			max-width: 80px
+			max-height: 70px
+			transform: translateY(-9%)
+.tools__item:nth-child(4)
+	.tools__item-img-wrapper
+		img 
+			max-width: 75px
+			max-height: 65px
+			//transform: translateY(25%)
+//end tools stoole
+
+//start platform style
+.platforms__content
+	display: flex 
+	justify-content: space-between
+	padding-top: 30px
+.platfotm__title
+	font-size: 24px
+	font-family: $primary-font
+	position: relative
+	margin-bottom: 20px
+	display: inline-block
+.platfotm__title:before 
+	content: ''
+	position: absolute 
+	left: 0 
+	bottom: 0px
+	width: 67% 
+	height: 3px 
+	background: $yellow
+.platform-col--text
+	max-width: 48%
+	p 
+		font-size: 18px
+.platform__buttons
+	display: flex 
+	justify-content: space-between
+	flex-wrap: wrap
+.platform__button
+	width: 48%	
+	border: 2px solid $yellow
+	border-radius: 4px
+	margin-bottom: 10px
+	height: 50px
+	display: flex 
+	align-items: center
+	padding-left: 15px 
+	padding-right: 15px
+	font-size: 18px
+	color: #404040
+	font-family: $primary-font
+	transition: all 0.3s
+	.platform__button-text
+		transform: translateY(8%)
+
+	img 
+		width: 25px
+		height: 25px
+		display: block 
+.platfotm-img-wrap 
+	width: 35px
+.platform__button:hover 
+	background: $yellow
+	color: #404040
+.platform__button--apple
+	img 
+		transform: translateY(-5%)
+//end platform style
+
+
+//start advantage style
+.advantages
+	min-height: 988px 
+	background: url('../img/back2.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	margin-top: -70px
+	padding-top: 90px
+	padding-bottom: 50px
+.advantages__items
+	margin-top: 50px
+.advantages__item-img
+	width: 100px 
+	height: 100px
+	background: url('../img/adv-bg.svg')
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	align-items: center
+	img 
+		max-width: 40px 
+		max-height: 40px
+.advantages__item
+	text-align: center
+	margin-bottom: 30px
+	p 
+		font-size: 15px
+		margin-bottom: #404040
+.advantages__item-title
+	font-size: 20px
+	font-weight: 500
+	color: #404040
+	line-height: 1.2
+	margin-top: 15px
+//end advantage style
+
+//start metods style
+.metods 
+	padding-top: 40px
+.metods__items
+	margin-top: 35px
+	display: flex
+	justify-content: space-between
+.metod__item-img
+	width: 170px
+	height: 160px
+	background: url('../img/metod.svg')
+	background-position: center
+	background-repeat: no-repeat
+	display: flex 
+	justify-content: center 
+	align-items: center
+	flex-direction: column
+	img 
+		max-width: 95px
+		min-width: 64px
+.metod__item:hover 
+	.metod__item-img
+		background: url('../img/metod-2.svg')
+		background-position: center
+		background-repeat: no-repeat
+
+.metod__item-title
+	font-size: 16.6px 
+	font-weight: 700 
+	color: #dfdfdf
+	text-align: center
+	line-height: 1.1
+//end metods style
+
+//start footer menu 
+.footer-menu 
+	background: #2a2a2a
+	color: #626262
+	padding-top: 34px
+	padding-bottom: 30px
+	position: relative 
+.footer-menu:before 
+	content: ''
+	width: 100% 
+	border-bottom: 1px solid #434343
+	
+	display: block 
+	position: absolute 
+	top: 61px
+.footer-menu-row
+	display: flex
+	justify-content: space-between
+.footer-menu__title
+	//border-bottom: 1px solid #434343
+	color: #a9a8a8
+	font-size: 18px
+	position: relative
+	margin-bottom: 5px
+.footer-menu__title:before 
+	content: ''
+	bottom: 0
+	position: absolute
+	left: 0 
+	height: 1px 
+	width: 80% 
+	border-bottom: 1px solid $yellow
+	transform: translateY(100%)
+
+
+.footer-menu__link 
+	display: block
+	margin-bottom: 10px
+	color: #626262
+.footer-menu__link:hover 
+	color: #dfdfdf
+.footer-menu__text
+	padding-top: 30px
+	font-size: 13px
+//end footer menu
+
+//start footer
+.footer 
+	padding-top: 15px 
+	padding-bottom: 15px
+	background: #434343
+	color: #a9a8a8
+	font-size: 13.5px
+.footer-row
+	display: flex 
+	justify-content: space-between
+	align-items: center
+.footer__logo
+	img 
+		width: 132px
+.footer-text
+	margin-top: 9px 
+	a 
+		display: block
+		line-height: 1.2
+		color: #dfdfdf
+		font-weight: 600
+		text-decoration: underline
+.footer-secure
+	max-width: 300px
+	display: flex
+	align-items: center
+	img 
+		display: block 
+		margin-right: 10px
+.footer-social
+	display: flex
+	a 
+		display: block 
+		margin-left: 10px
+	svg 
+		width: 45px 
+		height: 45px
+	.cls-1
+		stroke: #a9a8a8
+	.cls-2
+		fill: #a9a8a8
+	svg:hover 
+		.cls-1
+			stroke: $yellow
+		.cls-2
+			fill: $yellow
+.footer-bottom
+	padding-top: 25px
+	display: flex 
+	justify-content: space-between
+	font-size: 12px
+	a 
+		color: #dfdfdf
+		text-decoration: underline
+	span 
+		width: 4px
+		height: 4px
+		background: #dfdfdf
+		border-radius: 50%
+		display: block
+		margin-left: 15px 
+		margin-right: 15px
+.footer-links
+	display: flex
+	align-items: center
+.footer-menu-col
+	width: 100%
+.havale-icon
+	transform: translateX(18%)
+//end footer
+
+//start page-title style
+.page-title-section
+	min-height: 22vw 
+	background: url('../img/header-bg.png')
+	background-size: cover
+	background-position: center
+	position: relative 
+	top: -1px
+	.container-fluid 
+		display: flex 
+		flex-direction: column 
+		align-items: center 
+		justify-content: center
+		height: 100%
+		min-height: 20vw 
+.page-title-section--economik
+	background: url('../img/header-bg2.png')
+	background-size: cover
+	background-position: center
+	top: -3px
+.page-title-section--login 
+	background: url('../img/header-bg3.png')
+	background-size: cover
+	background-position: center
+	top: -3px
+.page-title-section--contact 
+	background: url('../img/header-bg4.png')
+	background-size: cover
+	background-position: center
+	top: -3px
+.page-title-section--promotions
+	min-height: 180px
+	height: 180px
+	background: rgb(52, 52, 52)
+	clip-path: polygon(-40% 0, 50% 100%, 140% 0)
+	padding-bottom: 13px
+	.page-title-section-wrapper1
+		background: #181818
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-32% 0, 50% 100%, 132% 0)
+		padding-bottom: 13px
+	.page-title-section-wrapper2 
+		background: rgb(52, 52, 52)
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-25% 0, 50% 100%, 125% 0)
+		padding-bottom: 1px
+	.page-title-section-wrapper3
+		background: #181818
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-24.5% 0, 50% 100%, 124.5% 0)
+	.container-fluid 
+		min-height: auto
+
+.page-title-section
+	min-height: 180px
+	height: 180px
+	background: rgb(52, 52, 52)
+	clip-path: polygon(-40% 0, 50% 100%, 140% 0)
+	padding-bottom: 13px
+	.page-title-section-wrapper1
+		background: #181818
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-32% 0, 50% 100%, 132% 0)
+		padding-bottom: 13px
+	.page-title-section-wrapper2 
+		background: rgb(52, 52, 52)
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-25% 0, 50% 100%, 125% 0)
+		padding-bottom: 1px
+	.page-title-section-wrapper3
+		background: #181818
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-24.5% 0, 50% 100%, 124.5% 0)
+	.container-fluid 
+		min-height: auto
+
+.duyulural.about-section
+	margin-top: -120px
+	.duyulural__items
+		padding-top: 150px
+.page-title-section--about
+	background: rgb(52, 52, 52)
+	min-height: 260px
+	height: 260px
+	clip-path: polygon(-75% 0, 50% 100%, 175% 0)
+	padding-bottom: 13px
+	.page-title-section-wrapper1
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-65% 0, 50% 100%, 165% 0)
+		padding-bottom: 13px
+		background-color: #181818
+		background-image: linear-gradient(38.65deg, rgba(#181818, 1) 4.63%, rgba(#181818, 0.8) 100%), url('../img/about-bg.png')
+		background-size: 82% 
+		background-position: center
+		background-repeat: no-repeat
+	.page-title-section-wrapper2 
+		background: rgb(52, 52, 52)
+		width: 100% 
+		height: 100%
+		clip-path: polygon(-55% 0, 50% 100%, 155% 0)
+		//clip-path: polygon(49% 96%, 100% 79%, 100% 86%, 49% 100%, 0 87%, 0 80%)
+		padding-bottom: 1px
+	.page-title-section-wrapper3
+		background: transparent
+		width: 100% 
+		height: 100%
+		background-color: #181818
+		background-image: linear-gradient(38.65deg, rgba(#181818, 1) 4.63%, rgba(#181818, 0.8) 100%), url('../img/about-bg.png')
+		background-size: 83% 
+		background-position: center
+		//background-position: top 30% center
+		//background-position: center
+		background-repeat: no-repeat
+		clip-path: polygon(-54% 0, 50% 100%, 154% 0)
+.page-title-section--about.page-title-section--account-types
+	.page-title-section-wrapper1
+		background-color: #181818
+		background-image: url('../img/types-bg.png')
+		background-size: cover
+		//background-position: center
+		background-repeat: no-repeat
+	.page-title-section-wrapper3
+		background-color: #181818
+		background-image: url('../img/types-bg.png')
+		background-size: cover
+		//background-position: center
+		background-repeat: no-repeat
+.page-title-section--analise
+	.page-title-section-wrapper1
+		background-color: #181818
+		background-image: url('../img/analis-bg.png')
+		background-size: cover
+		background-repeat: repeat
+		//background-position: center
+		background-repeat: no-repeat
+	.page-title-section-wrapper3
+		background-color: #181818
+		background-image: url('../img/analis-bg.png')
+		background-size: cover
+		background-repeat: repeat
+		background-size: cover
+.page-title-section--contact-page
+	.page-title-section-wrapper1
+		background-color: #181818
+		background-image: url('../img/bg-contact.png')
+		background-size: cover
+		background-repeat: repeat
+		//background-position: center
+		background-repeat: no-repeat
+	.page-title-section-wrapper3
+		background-color: #181818
+		background-image: url('../img/bg-contact.png')
+		background-size: cover
+		background-repeat: repeat
+		background-size: cover
+
+
+.page-title__text
+	color: #dfdfdf
+	font-size: 18px
+	max-width: 380px
+	text-align: center
+.page-title__text--m
+	max-width: 550px
+.page-title__text--l
+	max-width: 800px
+//end page-title style
+.duyulural
+	margin-top: -85px
+	.container-fluid
+		
+.duyulural__items
+	padding: 0 25px
+	padding-bottom: 18px
+	margin-bottom: 20px
+	border-bottom-left-radius: 15px
+	border-bottom-right-radius: 15px
+	background: #eeeeee
+	padding-top: 100px
+.duyulural__item
+	display: flex
+	align-items: center
+.duyulural__item-content
+	padding-left: 20px
+.duyulural__item-title
+	font-family: $primary-font
+	font-size: 18px
+.duyulural__item
+	padding-top: 20px 
+	padding-bottom: 20px
+	border-bottom: 2px solid rgb(194, 194, 194)
+	display: flex
+.duyulural__item:nth-child(6) 
+	border-bottom: none
+.duyulural__item-img-wrapper
+	border-radius: 10px
+	min-height: 100%
+	overflow: hidden 
+	min-width: 165px
+	img 
+		min-height: 100%
+		width: auto
+.page-pagination
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 30px
+	a 
+		display: block
+		font-size: 18px
+		font-family: $primary-font
+		margin: 0 10px
+		color: $text-color
+	a.active,
+	a:hover 
+		color: $yellow
+		font-size: 20px
+		text-decoration: underline
+
+//start white form section style
+.white-form
+	.main-screen__form
+		margin-top: 0
+		margin-bottom: 20px
+		background: #eeeeee
+	.main-screen__form-title,
+	.main-screen__form-bottom,
+	.main-screen__form-bottom a
+		color: $text-color
+	.form .input
+		background-color: #d8d8d8
+		border-left: 4px solid #bebebe
+		border-right: 4px solid #bebebe
+		color: $text-color
+	.form .input::placeholder
+		color: $text-color
+	.form .input:focus
+		background-color: #b9b9b9
+		border-left: 4px solid $yellow
+		border-right: 4px solid $yellow
+		font-weight: 500
+	.form .input:focus::placeholder
+		color: transparent
+//end white form section style
+
+//start egitim video style
+.egitim-video__tabs
+	display: flex
+	justify-content: space-between
+.egitim-video__tab
+	width: 23%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	height: 65px
+	cursor: pointer
+	border: 2px solid $yellow
+	border-radius: 5px
+	font-size: 18px 
+	text-align: center
+	font-family: $primary-font
+	line-height: 1.2
+.egitim-video__tab.active,
+.egitim-video__tab:hover
+	background: $yellow
+	font-weight: 600
+.egitim-video__tab-item
+	display: none
+.egitim-video__tab-item:first-child 
+	display: block
+.egitim-video__item
+	margin-top: 40px
+.egitim-video__image
+	width: 100%
+.egitim-video__item-img-wrapper
+	position: relative
+	border-radius: 15px
+	overflow: hidden
+	width: 100%
+	margin-bottom: 10px
+.egitim-video__item-overlay
+	position: absolute 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	width: 100% 
+	height: 100% 
+	top: 0 
+	left: 0
+	background: rgba(0, 0, 0, 0.5)
+.play-btn
+	cursor: pointer
+	width: 34.014%
+.egitim-video__item-title
+	font-family: $primary-font
+	font-size: 18px
+//end egitim video style
+
+
+//start economik style
+.economik-wrapper
+	margin-top: 30px
+	background: #f7f7f7
+	border-radius: 15px
+	padding: 40px 35px
+	font-size: 18px
+.economik__row,
+.economik__row-header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	span 
+		font-weight: 600
+	.economik__col:first-child 
+		width: 17%
+	.economik__col:nth-child(2)
+		width: 72%
+	.economik__col:nth-child(3)
+		width: 10%
+.economik__row-header
+	font-family: $primary-font
+	border-bottom: 2px solid $yellow
+.economik__date
+	background: #eaeaea
+	display: flex
+	justify-content: center 
+	align-items: center
+	height: 49px
+	color: #8c8c8c
+	font-size: 21px
+.economik__row
+	padding-top: 30px 
+	padding-bottom: 30px
+	border-bottom: 2px solid #eaeaea
+.economik__circle-row
+	display: flex
+.economik__circle
+	width: 15px 
+	height: 15px
+	min-width: 15px
+	border-radius: 50%
+	margin-left: 4px
+.economik__circle--yellow
+	background: #e2ac00
+.economik__circle--orange
+	background: #d45500
+.economik__circle--red
+	background: #a10000
+//end economik style
+
+//start login section 
+.login-section
+	padding-top: 40px 
+	padding-bottom: 40px
+	background: url('../img/login-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+.login-section__content 
+	min-height: 593px
+	border-radius: 5px
+	overflow: hidden
+	background: rgba(82, 82, 82, 0.902)
+.login-section__content
+	display: flex
+.login-section__col,
+.login-section__form
+	width: 50%
+	min-height: 593px
+.login-section__col
+	background-color: #3d3d3d
+	background-image: url('../img/login-col-bg.png')
+	padding: 15px
+	display: flex
+	flex-direction: column 
+	justify-content: flex-end
+	text-align: center
+.login-section__title
+	color: #fff
+	text-align: center
+	font-size: 28px
+	font-family: $primary-font
+	line-height: 1.25
+	margin-bottom: 110px
+	span 
+		display: block
+		color: $yellow
+		font-weight: 700
+.login-section__col-text 
+	font-size: 21px
+	font-family: $primary-font
+	color: rgb(247, 247, 247)
+	font-weight: 300
+	margin-bottom: 10px
+.login-section__buttons
+	display: flex
+	justify-content: space-between
+	.button 
+		width: 48%
+		cursor: pointer
+	.btn.active 
+		background: $yellow
+		color: #181818
+
+
+.button 
+	height: 50px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	background: $yellow
+	border-radius: 5px
+	font-size: 18px
+	color: #181818
+	font-family: $primary-font
+	transition: all 0.5s
+// .button:hover 
+// 	background: $yellow-hover
+// 	color: #181818
+.button--transparent
+	background: transparent 
+	border: 2px solid $yellow
+	color: $yellow
+// .button--transparent:hover
+// 	background: $yellow
+// 	color: #181818 
+.login-section__form
+	display: flex 
+	align-items: center
+	padding-left: 50px
+	padding-right: 50px
+.login-form__title
+	font-size: 21px
+	text-align: center
+	color: #dfdfdf
+	margin-bottom: 15px
+.login-form-wrapper
+	.form 
+		flex-direction: column
+	.input 
+		width: 100%
+		margin-bottom: 20px
+	.input:focus 
+		background-color: rgb(45, 45, 45)
+	.submit-button 
+		width: 100%
+.fogot-password
+	display: flex 
+	justify-content: flex-end
+	text-decoration: underline
+	color: #dfdfdf	
+	font-weight: 500
+	margin-top: 9px
+.fogot-password:hover 
+	color: #dfdfdf	
+	text-decoration: underline
+//end login section
+
+//start analis style
+.analis__tabs
+	display: flex 
+	justify-content: space-between
+	padding-bottom: 10px
+.analis__tab
+	width: 19%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	border: 2px solid $yellow
+	height: 50px
+	border-radius: 5px
+	font-size: 18px
+	font-family: $primary-font
+	cursor: pointer
+.analis__tab:hover,
+.analis__tab.active
+	background: $yellow
+	font-weight: 600
+	position: relative
+	border-bottom-left-radius: 0 
+	border-bottom-right-radius: 0
+	border: none
+.analis__tab:hover:before,
+.analis__tab.active:before	
+	content: ''
+	position: absolute 
+	bottom: 0 
+	left: 0%
+	width: 100%
+	height: 12px
+	background: $yellow
+	display: block
+	transform: translateY(100%) translateX(0%)
+.analis__tab-item
+	display: none
+.analis__tab-item:first-child 
+	display: block
+.analis__tab-wrapper
+	border: 8px solid $yellow
+	border-bottom-left-radius: 10px
+	border-bottom-right-radius: 10px
+	padding: 30px 30px 80px 30px
+.analis__sub-tabs
+	display: flex 
+	justify-content: space-between
+	cursor: pointer
+.analis__sub-tab
+	font-size: 18px 
+	font-family: $primary-font
+	color: #a2a2a2
+.analis__sub-tab.active
+	font-weight: 600
+	color: $text-color
+	position: relative
+.analis__sub-tab.active:before 
+	content: ''
+	width: 70% 
+	height: 2px 
+	background: $yellow
+	position: absolute 
+	bottom: 0 
+	left: 50% 
+	transform: translateX(-50%)
+.analis__sab-tab-items .analis__sub-tab-item
+	display: none 
+.analis__sab-tab-items .analis__sub-tab-item:first-child
+	display: block
+.analis__sub-tab-text
+	padding-top: 35px 
+	padding-bottom: 35px
+.analis__image
+	width: 100%
+	display: block 
+	margin-bottom: 30px
+.charts__info-wrapper
+	display: flex 
+	justify-content: center
+.charts__info
+	text-align: center
+	font-family: $primary-font
+	border-bottom: 2px solid $yellow
+	padding-left: 25px 
+	padding-right: 25px
+.analis__footer
+	margin-top: 20px
+	display: flex 
+	justify-content: space-between
+.analis__footer-button
+	display: flex 
+	align-items: center
+	justify-content: center
+	border: 2px solid $yellow
+	height: 50px 
+	width: 125px
+	border-radius: 5px
+	cursor: pointer
+	font-family: $primary-font 
+	font-weight: 600
+	img
+		width: 20px
+		height: 15px
+		display: block 
+		margin-right: 10px
+.analis__footer-button:hover 
+	background: $yellow
+.analis__footer-social
+	display: flex 
+	align-items: center
+	font-size: 21px 
+	font-family: $primary-font 
+	font-weight: 600
+	color: $yellow
+.analis__footer-social-title
+	white-space: nowrap	
+//end analis style
+
+//start about style
+.about-title 
+	font-size: 28px
+	text-align: center
+	margin-bottom: 20px
+	span 
+		color: $yellow 
+		font-weight: 600
+.about__text
+	margin-bottom: 28px
+.login-section__title--open
+	max-width: 370px
+	margin: 0 auto
+	margin-bottom: 22px
+	span 
+		display: inline-block
+.login-section__col-text--open
+	margin-bottom: 80px
+.login-section__col--open
+	background: url('../img/login-col-bg2.png')
+.button--disabled,
+.button--disabled:hover	
+	background: #525252
+	color: #dfdfdf
+.button--disabled
+	pointer-events: none
+.form-text
+	font-size: 16px 
+	color: #dfdfdf
+	font-weight: 300
+	margin-top: 10px
+	a 
+		font-weight: 500
+		color: #dfdfdf
+		text-decoration: underline
+.login-section__title--forgot
+	margin-bottom: 190px
+.check-image
+	width: 130px
+	margin: 0 auto
+	display: block
+	margin-bottom: 20px
+.forgot-content
+	max-width: 450px 
+	margin: 0 auto
+	text-align: center
+	padding-top: 50px 
+	padding-bottom: 50px
+.not-found__title
+	font-size: 28px 
+	font-family: $primary-font
+	color: #181818
+	margin-bottom: 15px
+.duyulural__items--fogot-password
+	background-image: url('../img/login-bg2.png')
+//end about style
+
+//start account types 
+.account-types__content
+	background: #f7f7f7
+	border-radius: 15px
+	padding: 40px 50px
+.account-types__row
+	display: flex 
+	justify-content: space-between
+.account-types__col
+	width: calc(20% - 5px)
+
+	margin-bottom: 5px
+.account-types__col.account-types__col-header
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	padding-bottom: 13px
+	height: auto
+.account-types__item-img
+	width: 90px 
+	height: 90px
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	background: url('../img/at.png')
+	font-size: 30px
+	color: #f3e5b8
+	span 
+		position: relative
+		top: -3px
+.account-types__item-img2
+	background: url('../img/at2.png')
+	span 
+		color: #fff
+.account-types__title
+	font-family: $primary-font 
+	font-weight: 600 
+	margin-top: 8px	
+	font-size: 18px
+	text-align: center
+.account-types__main
+	background: #eaeaea
+	border-radius: 5px
+	text-align: center 
+	justify-content: center 
+	align-items: center
+	display: flex
+	flex-direction: column
+	span 
+		font-weight: 600
+.account-types__col	
+	height: 60px
+	font-size: 15px
+	line-height: 1.2
+.account-types__col--side
+	display: flex 
+	justify-content: center 
+	align-items: center
+	border: 2px solid #eaeaea
+	border-radius: 5px
+	font-size: 16px 
+	font-weight: 600
+	text-align: center
+	font-family: $primary-font
+.account-types__footer
+	background: transparent
+	border: 2px solid $yellow
+	font-size: 16px 
+	font-weight: 600
+	text-align: center
+	font-family: $primary-font
+	color: $text-color
+.account-types__footer:hover 
+	background: $yellow
+	color: $text-color
+.accoynt-types__footer
+	display: flex 
+	flex-direction: column
+	align-items: center
+	padding-top: 25px
+	.button
+		padding-right: 29px
+		padding-left: 29px
+.account-types__footer-text
+	margin-bottom: 10px
+	text-align: center
+	a 
+		color: $text-color 
+		font-weight: 600
+.duyulural__items--account 
+	padding-top: 140px
+//end account types
+
+
+//start contact page 
+.contact-page-item
+	font-size: 20px
+	.contact-page-item-text--bold 
+		font-weight: 600
+.contact-page-item-text 
+	margin-top: 15px
+.contact-page-content
+	width: 100% 
+	border: 2px solid $yellow
+	border-radius: 5px
+	display: flex
+.contact-page-col,
+.contact-page-col-form
+	width: 50%
+	min-height: 485px
+.contact-page-col
+	background: url('../img/contact-page-bg.png')
+	background-size: cover
+	background-repeat: no-repeat 
+	background-position: center
+.contact-page-col2
+	background: url('../img/contact-page-bg2.png')
+	background-size: cover
+	background-repeat: no-repeat 
+	background-position: center
+	padding-top: 20px
+	padding-right: 20px
+	padding-left: 20px
+.contact-page-col-title
+	text-align: center
+	font-size: 21px
+	max-width: 320px
+	margin: 0 auto
+	padding-top: 320px
+	font-family: $primary-font 
+	font-weight: 300
+.contact-page-col-form
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 50px 50px
+	.login-form__title 
+		color: $text-color
+.contact-page-col2-text
+	text-align: center
+	margin-top: 40px
+	font-family: $primary-font
+.partners-form-text
+	font-weight: 300
+	margin-top: 10px
+	a 
+		font-weight: 500 
+		color: $text-color
+		text-decoration: underline
+.partner__tabs
+	display: flex
+	justify-content: space-between
+	margin-bottom: 40px
+	margin-top: 40px
+.partner__tab
+	border: 2px solid $yellow
+	width: 32%
+	height: 60px
+	border-radius: 5px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	cursor: pointer
+	font-family: $primary-font 
+	flex-wrap: 600
+	text-align: center
+	transition: all 0.3s
+.partner__tab.active,
+.partner__tab:hover 
+	background: $yellow
+.platforms__content--page
+	.platform-col--text
+		max-width: 51%
+	.platfotm__title:before 
+		width: 40%
+.web-trader-content
+	text-align: center
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	max-width: 466px
+	margin: 0 auto
+	margin-top: 50px
+	margin-bottom: 10px
+.web-trader__title
+	position: relative
+.platfotm__title.web-trader__title:before
+	left: 50%
+	transform: translateX(-50%)
+.web-trader-text
+	margin-bottom: 15px
+//end contact page
+
+//start promotion style
+.promotions__item
+	margin-top: 20px
+	position: relative
+	overflow: hidden
+	border-radius: 15px
+	img 
+		width: 100%
+
+
+
+
+
+.promotions__item:before 
+	content: ''
+	background: $yellow
+	width: 63.830%
+	position: absolute 
+	top: 0 
+	left: 0
+	height: 100%
+	clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%)
+.promotions__content
+	position: absolute 
+	top: 0 
+	left: 0 
+	width: 100% 
+	height: 100%
+	padding: 18px 10px
+.promotions__title
+	font-size: 32px
+	font-family: $primary-font
+	line-height: 1.1
+.promotions__text
+	font-size: 15px
+	line-height: 1.3
+// .polygon
+// 	float: right
+// 	shape-outside: polygon(0 0, 0% 100%, 100% 100%)
+// 	clip-path: polygon(0 100%, 0% 460%, 100% 0%)
+// 	height: 140px
+// 	width: 100px
+// 	min-width: 100px
+// 	background: -o-linear-gradient(bottom left, red, red)
+// 	background: -webkit-gradient(linear, left bottom, right top, from(red), to(red))
+// 	background: linear-gradient(to top right, red, red)
+// 	position: relative
+// 	z-index: 999
+//end promotion style
+.terms-of-use__text
+	font-size: 16px 
+	margin-bottom: 30px
+.search-input
+	width: 500px
+	display: block 
+	margin: 0 auto
+	background: #dfdfdf
+	border-radius: 5px 
+	border: none
+	height: 50px 
+	padding-left: 17px 
+	padding-right: 17px
+	outline: none
+	font-size: 16px 
+	font-family: $primary-font
+	margin-bottom: 38px
+	max-width: 100%
+.search-input:placeholder
+	color: #848282
+.search-input:focus 
+	border: 2px solid #a4a4a4
+.search-input:focus::placeholder
+	color: transparent 
+.letter-list 
+	display: flex 
+	justify-content: space-between
+	padding-bottom: 40px
+	a 
+		font-family: $primary-font
+		color: $text-color
+	a.active,
+	a:hover 
+		font-weight: 600
+.dictionary__item
+	padding-bottom: 20px 
+	padding-top: 20px 
+	border-bottom: 2px solid #dfdfdf
+.dictionary__item:last-child 
+	border-bottom: none
+	padding-bottom: 40px
+.dictionary__title
+	font-family: $primary-font
+	padding-left: 6px 
+	border-left: 2px solid $yellow
+	line-height: 1.2
+.dictionary__text
+	padding-left: 8px
+	font-size: 15px
+.faq__item
+	padding-bottom: 20px 
+	padding-top: 20px 
+	border-bottom: 2px solid #dfdfdf
+.faq__item-title
+	font-family: $primary-font
+	padding-left: 12px
+.faq__item-header
+	display: flex
+	align-items: center
+	cursor: pointer
+.faq__item-plus
+	width: 12px 
+	height: 12px
+	position: relative
+	display: flex 
+	justify-content: center 
+	align-items: center
+	.faq__item-row:first-child 
+
+		width: 12px 
+		height: 4px 
+		background: $yellow
+	.faq__item-row:last-child 
+		width: 4px 
+		height: 12px 
+		background: $yellow
+		position: absolute 
+		top: 0 
+		left: 50% 
+		transform: translateX(-50%)
+.faq__item-text
+	font-size: 15px
+	padding-left: 24px
+	display: none
+.faq__item-header.active 
+	.faq__item-title
+		color: $yellow
+		font-weight: 600
+	.faq__item-row:last-child 
+		display: none
+
+//start tool style
+.tool__tabs
+	display: flex
+	justify-content: space-between
+	padding-bottom: 39px
+.tool__tab
+	width: 19%
+	display: flex
+	justify-content: center
+	align-items: center
+	border: 2px solid $yellow
+	height: 60px
+	border-radius: 5px
+	text-align: center
+	font-family: $primary-font
+	line-height: 1.2
+	cursor: pointer
+.tool__tab:hover,
+.tool__tab.active 
+	background: $yellow
+	font-weight: 600
+.tool__tabs-item
+	display: none
+.tool__tabs-item:first-child 
+	display: block
+.tool-text
+	margin-bottom: 30px
+.tool__title
+	font-weight: 600	
+	font-family: $primary-font
+	color: #181818 
+	position: relative 
+	margin-bottom: 5px
+.tool__title:before 
+	content: ''
+	position: absolute 
+	left: 0 
+	bottom: 0 
+	height: 2px 
+	width: 94px 
+	background: $yellow 
+	display: block
+.tool__sub-title
+	font-weight: 600
+	font-family: $primary-font
+//end tool style
+
+//start popup style
+.popup 
+	position: fixed 
+	width: 100% 
+	height: 100% 
+	overflow-y: auto 
+	background: rgba(0, 0, 0, 0.8)
+	top: 0 
+	left: 0
+	z-index: 9999
+	display: none
+.popup__content
+	background: #eeeeee
+	width: 730px
+	position: absolute 
+	left: 50% 
+	transform: translateX(-50%)
+	top: 5vw
+	max-width: 95%
+	border-radius: 15px
+	overflow: hidden
+	padding-bottom: 40px
+	.button 
+		width: 230px
+		font-size: 16px 
+		font-weight: 600 
+		font-family: $primary-font
+		margin: 0 auto
+.popup__img 
+	border-radius: 15px
+	width: 100%
+.popup__title
+	text-align: center
+	font-size: 32px
+	font-family: $primary-font
+	color: #343434
+	margin: 40px auto
+	position: relative
+.popup__title:before 
+	content: ''
+	position: absolute 
+	bottom: 0 
+	left: 50% 
+	transform: translateX(-50%)
+	height: 3px
+	width: 96px
+	background-color: rgb(211, 161, 0)
+.popup__content-wrapper
+	padding-left: 40px 
+	padding-right: 40px
+.popup__item
+	position: relative 
+	padding-left: 20px
+	padding-bottom: 22px
+.popup__item:before 
+	content: ''
+	position: absolute 
+	top: 9px
+	left: 0
+	background: rgb(211, 161, 0)
+	display: block 
+	width: 10px 
+	height: 10px 
+	border-radius: 50%
+.popup__list
+	margin-bottom: 15px
+.popup__close
+	display: inline-block 
+	text-align: center
+.popup__footer
+	text-align: center
+.popup__close 
+	color: #727272
+	text-decoration: underline
+	font-weight: 300 
+	font-size: 16px
+	padding-top: 15px 
+	cursor: pointer
+.open-popup-write
+	cursor: pointer
+.duyulural__items--analise
+	padding-top: 130px
+.page-title-section--tools
+	.container-fluid 
+		transform: translateY(-11%)
+//end popup style
+.partner-tab-item
+	display: none
+.partner-tab-item:first-child 
+	display: block
+.login-form__title span
+	font-weight: 700
+
+//start modal style 
+.modal 
+	background: rgba(0, 0, 0, .8)
+	position: fixed 
+	width: 100% 
+	height: 100% 
+	position: fixed 
+	top: 0 
+	left: 0 
+	z-index: 999
+	overflow-y: auto
+	display: none
+.modal-content
+	width: 505px
+	max-width: 100%
+	background: #eeeeee
+	border-radius: 15px
+	overflow: hidden
+	position: absolute 
+	left: 50%
+	transform: translateX(-50%) 
+	top: 2vw
+.modal__wrapper
+	padding: 40px 70px 39px 70px
+	.popup__title
+		margin-top: 0
+	.form 
+		flex-direction: column
+		input,
+		button 
+			width: 100%
+		input 
+			margin-bottom: 10px
+			border-left: 4px solid $yellow
+			border-right: 4px solid $yellow
+			background-color: #fff
+			color: $yellow
+		input:focus 
+			border-left: 4px solid $yellow-hover
+			border-right: 4px solid $yellow-hover
+			background-color: #fff 
+			color: $yellow
+		input::placeholder 
+			color: #404040
+
+.open-modal
+	cursor: pointer
+//end modal style
+
+
+.shaped
+	background: transparent center top no-repeat
+	height: 100%
+	width: 72.5%
+	background-size: cover
+	float: right
+	shape-outside: polygon(47% 0, 100% 0, 100% 100%, 0% 100%)
+	clip-path: polygon(47% 0, 100% 0, 100% 100%, 0% 100%)
+
+// start form style
+.main-screen__form-page
+	min-height: 40vw
+	background: url('../img/yellow-bg.png')
+	background-repeat: no-repeat
+	background-size: cover
+	padding-bottom: 125px
+.main-screen__form-page--black
+	background: url('../img/black-bg.png')
+	background-repeat: no-repeat
+	background-size: cover
+.form-page__header
+	padding-top: 19px
+	padding-bottom: 19px
+	.container-fluid 
+		justify-content: space-between
+		display: flex
+		align-items: flex-end
+.form-page__menu
+	display: flex
+	a 
+		display: block 
+		margin-left: 35px 
+		color: $title-color
+.main-screen__form-page-content
+	width: 100%
+	height: 100% 
+	display: flex 
+	flex-direction: column 
+	justify-content: center 
+	align-items: center
+	min-height: 391px
+	text-align: center
+	color: rgb(42, 42, 42)
+.main-screen__form-page-title
+	font-size: 36px
+	line-height: 1.25
+	
+	font-family: $primary-font
+	font-weight: 400 
+	span 
+		font-weight: 700
+.main-screen__form-page-text
+	max-width: 380px
+.main-screen__btn--yellow
+	background: $title-color
+	color: $yellow
+.main-screen__btn--yellow:hover 
+	background: $title-color
+	color: $yellow
+.main-screen__form-page-wrapper
+	padding-top: 15px
+.main-screen__form-page-form
+	width: 431px 
+	max-width: 100% 
+	background: rgba(#fff, 0.502)
+	border-radius: 5px
+	padding: 30px
+	.login-form__title
+		color: $text-color
+	.form .input
+		background-color: #fff
+		border-left: 4px solid $yellow
+		border-right: 4px solid $yellow
+		color: $text-color
+	.form .input::placeholder
+		color: $text-color
+	.form .input:focus::placeholder
+		color: transparent
+.fotm-page__form-info
+	font-size: 13px
+	font-weight: 300
+	margin-top: 9px
+	a 
+		color: $text-color 
+		text-decoration: underline 
+		font-weight: 500
+.advantages--form-page
+	margin-top: 0
+// end form style
+
+//start learn-forex style
+.learn-forex
+	padding-bottom: 65px
+.learn-forex__content
+	display: flex
+	margin-top: 25px
+.learn-forex__tabs
+	width: 50%
+	height: 100%
+	display: flex 
+	flex-direction: column 
+	justify-content: center
+	height: auto
+.learn-forex__tab-content
+	width: 50%
+	height: 100%
+
+.learn-forex__tab
+	cursor: pointer
+	margin-bottom: 20px
+	padding-top: 8px 
+	padding-bottom: 8px
+	font-size: 21px
+	color: #434343
+	font-weight: 300
+	margin-right: 60px
+	border-bottom: 3px solid #c1c1c1
+	font-family: $primary-font
+	padding-left: 20px
+	position: relative
+	border-bottom-left-radius: 3px
+.learn-forex__tab.active
+	font-weight: 400 
+	color: #181818
+	margin-right: 0
+	border-bottom: 3px solid $yellow
+.learn-forex__tab-item
+	display: none
+.learn-forex__tab-item:first-child 
+	display: block
+.learn-forex__tab:before 
+	content: ''
+	height: 100% 
+	width: 27.033%
+	background: #c1c1c1
+	display: block
+	position: absolute 
+	left: 0 
+	bottom: -1px
+	z-index: -1
+	border-radius: 3px
+	border-bottom-right-radius: 0px
+.learn-forex__tab.active:before 
+	background: $yellow
+.learn-forex__tab:nth-child(2):before
+	width: 21%
+.learn-forex__tab:nth-child(3):before
+	width: 34%
+.learn-forex__tab:nth-child(3):before
+	width: 25%	
+.learn-forex__text
+	border: 3px solid $yellow
+	border-radius: 3px
+	padding: 20px
+	background: #e8e8e8
+//end learn-forex style
+
+//start calculator style
+.calculator-section
+
+.calculator
+	margin-top: 23px
+	min-height: 180px
+	background-color: #f2f2f2
+	border-radius: 15px
+	background-image: url('../img/calculator-bg.png')
+	padding: 30px
+	padding-bottom: 10px
+.calculator__irems
+	display: flex 
+	justify-content: space-between
+	flex-wrap: wrap
+.calculator__item
+	width: 49%
+	background: #d8d8d8
+	border-radius: 5px
+	height: 50px
+	margin-bottom: 20px
+	display: flex 
+	align-items: center 
+	justify-content: center
+.calculator__item--yellow
+	background: $yellow
+.calculator__item--transparent
+	border: 2px solid $yellow
+	background: #f2f2f2
+.calculator__item-icon
+	max-height: 27px
+.calculator__item-title
+	font-size: 16px
+	margin-left: 5px 
+	margin-right: 5px
+.calculator__item-value
+	font-size: 21px
+	font-weight: 500
+.calculator__item-value
+	input 
+		width: auto
+.calculator__item-value-slide
+	input 
+		display: inline-block
+		width: 85px
+		background: transparent
+	.slide 
+		width: 178px
+		display: inline-block
+.slide-input
+	border: none
+	font-size: 21px 
+	font-weight: 500
+.ui-widget.ui-widget-content
+	height: 10px 
+	border: 2px solid $yellow
+	border-radius: 20px
+.ui-slider-horizontal .ui-slider-range
+	background: $yellow
+	border: none
+	height: 100%
+.ui-slider-horizontal .ui-slider-handle
+	top: 50%
+	transform: translateY(-50%)
+	width: 24px 
+	height: 24px 
+	border-radius: 50%
+	outline: none
+	background: #ba8e00
+	box-shadow: none
+.ui-slider-horizontal .ui-slider-handle.ui-state-active 
+	background: #ba8e00
+	border: none 
+	outline: none
+.calculator__title-img
+	//display: flex
+//end calculator style
+
+//start methods section
+.methods-section
+	padding-bottom: 50px
+	background: url('../img/methods-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top center
+	padding-top: 80px
+//end method section
+
+// .slider-item__content
+// 	width: 100%
+// .slider-item
+// 	padding: 35px 10px
+// .slider-item__content
+// 	min-height: 248px
+// 	border-radius: 15px
+// 	background: #ededed
+// 	padding: 10px 20px
+// 	transition: all 0.5s
+// 	position: absolute
+// 	top: 50%
+// 	left: 50%
+// 	transform: translateX(-50%) translateY(0%) scale(0.5)
+// 	//width: 500px
+
+
+// .slick-slide
+// 	position: relative
+	
+// 	//min-height: 317px
+
+.slider-item__content
+	//min-width: 446px
+	//min-height: 317px
+	padding: 30px 40px
+	opacity: 0.6
+	transition: all 0.5s
+	.slider-text
+		text-align: center
+		font-size: 18px
+		//width: 500px
+		margin: 0 auto
+		max-width: 90%
+	.slider__user-name
+		font-size: 16px
+	.slider__user-info
+		display: flex 
+		align-items: center
+		justify-content: center
+		transform: translateY(-20%)
+		img 
+			border-radius: 50%
+			display: block
+			margin-right: 20px
+			width: 70px 
+			height: 70px
+	.dot-start,
+	.dot-end
+		font-size: 72px
+		line-height: 0.5
+		color: $yellow
+	.dot-start
+		transform: translateY(50%)
+	.dot-end	
+		text-align: right	
+// .slick-slide.slick-center
+// 	z-index: 9999
+// 	position: relative
+// 	min-height: 317px
+// 	.slider-item__content
+// 		opacity: 1
+// 		z-index: 999
+// 		min-width: 646px
+// 		transform: translateX(-50%) translateY(-50%) scale(1)
+// 		min-height: 317px
+// 		padding: 30px 40px
+
+
+// .slider-wrapper
+// 	margin-top: 35px
+// 	padding-bottom: 50px
+// .slider__user-info
+// 	display: flex 
+// 	align-items: center
+// 	justify-content: center
+// 	transform: translateY(-40%)
+// 	img 
+// 		border-radius: 50%
+// 		display: block
+// 		margin-right: 20px
+// .slider-text-wrapper
+// 	display: flex 
+// 	flex-direction: column
+// .dot-end
+// 	align-self: flex-end
+// .slider-text
+// 	text-align: center
+// 	font-size: 14px
+// .slider__user-name
+// 	font-size: 12.54px
+// .slider__user-info img
+// 	margin-right: 5px
+// 	width: 30px
+// 	height: 30px
+// .dot-start,
+// .dot-end
+// 	font-size: 56px
+// 	line-height: 0.5
+// 	color: $yellow
+// .dot-start
+// 	transform: translateY(50%)
+// .slider-text
+// 	max-width: 90%
+
+
+
+//start slick
+.container-slide
+	width: 1000px
+	margin: 0 auto
+	max-width: 85%
+
+.slick-slider
+	margin-left: -12%
+	margin-right: -12%
+.slick-list
+	padding-top: 5%!important
+	padding-bottom: 5%!important
+	padding-left: 15%!important
+	padding-right: 15%!important
+.slick-dots
+	text-align: right
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+.slick-track
+	max-width: 100%!important
+	transform: translate3d(0, 0, 0)!important
+	perspective: 100px
+.slick-slide
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: auto
+	opacity: 0
+	width: 100%!important
+	transform: translate3d(0, 0, 0)
+	transition: transform 1s, opacity 1s
+	.test 
+		opacity: 0.6
+		height: 251px
+		margin-top: 32px
+	.slider-text
+		//font-size: 14px
+.slick-snext,
+.slick-sprev
+	display: block
+.slick-current
+	opacity: 1
+	position: relative
+	display: block
+	transform: translate3d(0, 0, 5px)
+	z-index: 2
+	.slider-item__content
+		opacity: 1
+
+	.test
+		opacity: 1
+		height: 317px
+		margin-top: 0
+	.slider-text
+		//font-size: 18px
+
+
+.slick-snext
+	opacity: 1
+	transform: translate3d(20%, 0, 0px)
+	z-index: 1
+.slick-sprev
+	opacity: 1
+	transform: translate3d(-20%, 0, 0px)
+.test
+	display: block
+	width: 100%
+	height: 317px
+	background: #ededed
+	border-radius: 15px
+
+
+
+
+
+//end slick
+
+.main-screen__form-page--black
+	.main-screen__form-page-title
+		color: #fff
+		span 
+			color: $yellow
+	.main-screen__form-page-text
+		color: #fff
+	.main-screen__btn.main-screen__btn--yellow
+		background: $yellow
+		color: #181818
+	.main-screen__btn.main-screen__btn--yellow:hover
+		background: $yellow-hover
+	.main-screen__form-page-form
+		background: rgba(255,255,255,0.6)
+.main-screen__form-page .form .input
+	background: #f6efd9
+.main-screen__form-page .form .input:focus
+	background: #fff
+.main-screen__form-page--black .main-screen__form-page-form .form .input
+	background: #efeadd
+.main-screen__form-page--black .main-screen__form-page-form .form .input:focus
+	background: #fff
+
+@import "media"
+
+
+
